@@ -5,7 +5,7 @@ const connectDb = async () => {
 
   try {
     // Connect to the MongoDB database
-    await mongoose.connect("mongodb://localhost:27017/users");
+    await mongoose.connect("mongodb+srv://akarshshrivastava:XOsmL888rId7tklu@cluster0.paay6cm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
  
     // Query the database using the model
     
