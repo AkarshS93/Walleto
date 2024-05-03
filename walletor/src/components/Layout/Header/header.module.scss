@@ -1,0 +1,59 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    //background-color: rgb(92 209 137);
+    background-color: #04AA6D;
+    .logo{
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+    }
+    .wrap{
+        display: flex;
+        width: 300px;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        font-weight: 500;
+        justify-content: space-evenly;
+        }
+    .wraptwo{
+        display: flex;
+        width: 150px;
+        align-items: center;
+        cursor: pointer;
+        //padding: 5px;
+        color: white;
+        font-weight: 500;
+        justify-content: space-evenly;
+        }
+
+    .balance{
+        display: flex;
+        align-items: center;
+        border: 1px solid white;
+        padding: 2px 5px;
+    }
+    .user{
+        position: relative;
+        padding: 10px;
+        .logout{
+            display: none;
+        }
+
+        &:hover .logout{
+            display: block;
+            position: absolute;
+            border: 1px solid #04AA6D;
+            background: #04AA6D;
+            bottom: -49px;
+            left: -5px;
+            padding: 0px 20px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            
+        }
+    }
+
+}

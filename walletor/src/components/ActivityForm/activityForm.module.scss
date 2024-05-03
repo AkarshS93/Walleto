@@ -1,0 +1,39 @@
+.box{
+    padding-bottom: 2rem;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    background: #a1eacb;
+    padding: 30px 60px 20px 5px;
+    border-radius: 10px;
+    height: 115px;
+    position: relative;
+
+    .item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    & .btnwrap{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+    }
+    .btn{
+        width: 100px;
+        padding: 5px;
+        background: #038152;
+        color: white;
+        border: none;
+        margin-top: 10px;
+        border-radius: 2px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}

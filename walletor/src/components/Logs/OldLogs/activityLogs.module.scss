@@ -1,0 +1,110 @@
+.container{
+    position: relative;
+    width: 85%;
+    margin: 50px auto;
+    & h2{
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .init {
+        text-align: left;
+        font-weight: 500;
+        border: 1px solid black;
+        width: fit-content;
+        padding: 5px;
+        margin-bottom: 5px;
+        border-radius: 3px;
+        p{
+            margin: 0;
+        }
+    }
+}
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;   
+    width: 100%;
+    padding-top: 10px;
+   // height: 300px;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.table tr:hover {
+    background-color: white;
+    & .edit, .ok{
+        visibility: visible;
+    }
+
+}
+.table td:last-child{
+    background-color: white;
+    border: none;
+    width: unset;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+}
+.selector{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+
+    & select{
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+.pgwrap{
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+.pg{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+.activeIndex{
+    background: #04AA6D;
+    color: white;
+}
+.modifide{
+    display: flex;
+    width: 30px;
+    background: none;
+   // flex-direction: column;
+}
+.edit{
+    margin-right: 5px;
+    cursor: pointer;
+    visibility: hidden;
+}
+.ok{
+    margin-left: 5px;
+    cursor: pointer;
+    visibility: hidden;
+}

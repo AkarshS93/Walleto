@@ -1,0 +1,56 @@
+.formbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 38vw;
+
+    & .form{
+        width: 65%;
+    }
+
+    .elements{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    input{
+        width: 100%;
+        padding: 8px;
+        margin: 4px 0 6px;
+        width: 100%;
+        border: none;
+        background: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 3px 3px 0px 0px #b4b4b4;
+        outline: none;
+    }
+    label{
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .btnContainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn{
+            width: 100px;
+            padding: 5px;
+            background: #038152;
+            color: white;
+            border: none;
+            margin-top: 10px;
+            border-radius: 2px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        p {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+}
